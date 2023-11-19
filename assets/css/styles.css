@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #ffb900;
+}
 html {
   font-size: 62.5%;
 }
@@ -26,10 +29,13 @@ a {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  border-radius: 24.5px;
+  border-radius: 999px;
   background: #171100;
   padding: 0 16px;
   line-height: 50px;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 
 /* header */
@@ -82,7 +88,7 @@ a {
 /* hero */
 .header .hero {
   display: flex;
-  margin-top: 56px;
+  padding: 56px 0 63px;
 }
 .header .hero .media-block {
   width: 48%;
@@ -103,7 +109,7 @@ a {
   background: #fff;
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
   width: 270px;
-  padding: 28px 24px;
+  padding: 24px;
 }
 .header .hero .hero-summary .item {
   display: flex;
@@ -144,5 +150,62 @@ a {
 }
 .header .hero .info {
   width: 52%;
-  margin-left: 130px;
+  padding: 64px 0 0 130px;
+}
+.header .hero .info .title {
+  color: #171100;
+  font-family: "Sen";
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: -1.16px;
+}
+.header .hero .info .desc {
+  margin-top: 22px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 166%;
+}
+.header .hero .info .action {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 40px;
+}
+.hero .hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+  border-radius: 32px;
+}
+.hero .watch-video {
+  border: none;
+  background: #fffcf4;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.hero .watch-video .icon {
+  padding-top: 17px;
+}
+.hero .watch-video span {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166%;
+  padding-bottom: 2px;
+}
+.hero .info .stats.desc {
+  margin-top: 8px;
+}
+.hero .info .stats strong {
+  color: #171100;
+  font-family: "Sen";
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 122%;
+  padding: 0 12px 0 28px;
+}
+.hero .info .stats strong:first-child {
+  padding-left: 0;
 }
