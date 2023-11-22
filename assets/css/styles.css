@@ -313,3 +313,49 @@ a {
   color: #fff;
   background-color: var(--primary-color);
 }
+/* feedback */
+.feedback {
+  margin-top: 135px;
+  background-color: #2e2100;
+  padding: 96px 0;
+}
+.feedback .feedback-item {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback .feedback-item .avatar {
+  height: 72px;
+  width: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.feedback .feedback-item .title {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: "Sen";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141%;
+}
+.feedback .feedback-item .desc {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 185%;
+  margin-top: 4px;
+}
+.feedback .feedback-item .dots {
+  margin-top: 28px;
+  cursor: pointer;
+}
+.feedback .feedback-item .feedback-content {
+  width: 66%;
+}
+.feedback .feedback-item .feedback-content blockquote {
+  margin-left: 30px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 153%;
+}
